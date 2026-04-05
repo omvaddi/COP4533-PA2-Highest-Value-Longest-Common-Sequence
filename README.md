@@ -11,7 +11,7 @@ Instructions:
 - Enter the file path when prompted. ex: files/file1.txt
 - Read output.
 
-Example input (files/example.in):
+Example input (files/example.in):  
 3  
 a 4  
 b 2  
@@ -19,7 +19,7 @@ c 3
 abcb  
 bcab
 
-Example output (files/example.out):
+Example output (files/example.out):  
 7  
 bcb
 
