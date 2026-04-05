@@ -12,15 +12,15 @@ Instructions:
 - Read output.
 
 Example input (files/example.in):
-3
-a 4
-b 2
-c 3
-abcb
+3  
+a 4  
+b 2  
+c 3  
+abcb  
 bcab
 
 Example output (files/example.out):
-7
+7  
 bcb
 
 Assumptions:
