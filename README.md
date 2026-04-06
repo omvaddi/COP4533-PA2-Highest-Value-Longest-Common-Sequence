@@ -51,27 +51,21 @@ Let n, m equal the length of strings A and B, respectively, with v(c) representi
 Initialize dp[n][m]   
       
 For i = 1 to n:  
-    For j = 1 to m:  
-      
-        If A[i - 1] == B[j - 1]:   
-            dp[i][j] = dp[i-1][j-1] + v(A[i])  
-              
-        else:  
-            dp[i][j] = max(dp[i-1][j], dp[i][j-1])  
-              
+``For j = 1 to m:  
+````If A[i - 1] == B[j - 1]:   
+``````dp[i][j] = dp[i-1][j-1] + v(A[i])  
+````Else:  
+``````dp[i][j] = max(dp[i-1][j], dp[i][j-1])  
 Initialize i = n, j = m, length = 0  
 While i > 0 and j > 0:  
-  
-    If A[i - 1] == B[j - 1]:  
-        length++   
-        i--  
-        j--  
-          
-    Else if dp[i-1][j] >= dp[i][j-1]:  
-        i--   
-          
-    else:  
-        j--  
+``If A[i - 1] == B[j - 1]:  
+````length++   
+````i--  
+````j--  
+``Else if dp[i-1][j] >= dp[i][j-1]:  
+````i--   
+``Else:  
+````j--  
           
 return length  
 
