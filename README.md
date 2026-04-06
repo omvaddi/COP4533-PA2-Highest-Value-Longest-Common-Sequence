@@ -30,7 +30,7 @@ Assumptions:
 Question 1: Empirical Comparison 
 ![Runtime Graph](runtime_graph.png) 
  
-Question 2: Recurrence Equation 
+Question 2: Recurrence Equation   
 Let the two strings be:   
 A = a1a2...a_n,   B = b1b2...b_m   
 Let v(c) be the value of character c from the fixed alphabet.    
