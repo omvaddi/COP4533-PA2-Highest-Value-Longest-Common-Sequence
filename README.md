@@ -31,14 +31,14 @@ Question 1: Empirical Comparison
 ![Runtime Graph](runtime_graph.png) 
  
 Question 2: Recurrence Equation 
-Let the two strings be: 
-A = a1a2...a_n,   B = b1b2...b_m 
-Let v(c) be the value of character c from the fixed alphabet. 
-Let OPT(i, j) be the maximum total value of a common subsequence of the first i characters of A and the first j characters of B. 
-The recurrence equation is: 
-            {0                                  if i = 0 or j = 0 (base case) 
-OPT(i, j) = {OPT(i-1, j-1) + v(a_i)             if a_i = b_j
-            {max(OPT(i-1, j), OPT(i, j-1))      if a_i != b_j 
+Let the two strings be:   
+A = a1a2...a_n,   B = b1b2...b_m   
+Let v(c) be the value of character c from the fixed alphabet.    
+Let OPT(i, j) be the maximum total value of a common subsequence of the first i characters of A and the first j characters of B.  
+The recurrence equation is:   
+            {0                                  if i = 0 or j = 0 (base case)   
+OPT(i, j) = {OPT(i-1, j-1) + v(a_i)             if a_i = b_j   
+            {max(OPT(i-1, j), OPT(i, j-1))      if a_i != b_j    
 
 This recurrence is correct because when the characters of each string matches, it will include this character in the subsequence 
 and thus add its value. When the characters do not match, it will keep the highest value of the previous subsequences. 
