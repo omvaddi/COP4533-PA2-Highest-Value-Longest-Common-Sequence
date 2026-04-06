@@ -26,6 +26,7 @@ bcb
 Assumptions:
 - The first line of the file should be an integer K >= 1, where K represents how many letters are in the alphabet. The next K lines should each contain a character and its  value seperated by a space. The next line should contain string A. The next and final line should contain string B. Both string A and B should only contain characters found in the alphabet.
 - The output will display the value of the highest value common subsequence of string A and B on the first line. The second line will display the highest value common subsequence.
+- To run graph.py, in the terminal run "python src/graph.py". Note that you may need to run "pip install matplotlib" if it doesn't work.
 
 Question 1: Empirical Comparison 
 ![Runtime Graph](runtime_graph.png) 
