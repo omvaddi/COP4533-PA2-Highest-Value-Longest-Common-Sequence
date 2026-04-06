@@ -1,6 +1,6 @@
 Programming Assignment 3: Highest Value Longest Common Sequence
 
-Om Vaddi (15302285)
+Om Vaddi (15302285)    
 Thomas Alvarado (65211333)
 
 Instructions:
@@ -44,4 +44,27 @@ OPT(i, j) =
 This recurrence is correct because when the characters of each string matches, it will include this character in the subsequence 
 and thus add its value. When the characters do not match, it will keep the highest value of the previous subsequences. 
 The equation considers all possibilites for either including or skipping each character, and builds the correct solution 
-from smaller subproblems.
+from smaller subproblems.  
+
+Question 3: Big-Oh   
+Let n, m equal the length of strings A and B, respectively, with v(c) representing the value of the character   
+Initialize dp[n][m]   
+For i = 1 to n:
+    For j = 1 to m:  
+        If A[i - 1] == B[j - 1]:   
+            dp[i][j] = dp[i-1][j-1] + v(A[i])  
+        else:  
+            dp[i][j] = max(dp[i-1][j], dp[i][j-1])  
+Initialize i = n, j = m, length = 0  
+While i > 0 and j > 0:  
+    If A[i - 1] == B[j - 1]:  
+        length++   
+        i--  
+        j--  
+    Else if dp[i-1][j] >= dp[i][j-1]:  
+        i--   
+    else:  
+        j--  
+return length  
+
+The runtime of this algorithm is O(n * m), as it takes n * m time to solve the original problem and n + m time to backtrack to find the length of the subsequence.
