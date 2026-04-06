@@ -1,0 +1,9 @@
+6
+y 15
+b 15
+n 7
+d 15
+r 13
+f 6
+nfbfbbydbbdnbnybfrybyfbbrbrnndrybbffbfnnnnfbbrfnyynfr
+bdnbffbnndnddnyyyynrbdnfnddyyrfrrndrdyfdbnddyybynrrnfdrnfdyb
